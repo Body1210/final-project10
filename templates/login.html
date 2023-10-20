@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block main %}
+<form action="/login" method="post">
+    <p style="font-size:40px;" class="valid">{{massege}}</p>
+    <div class="mb-3">
+        <select class="form-select mx-auto w-auto" name="country">
+            <option disabled selected>country</option>
+            <option value="us">United States</option>
+            <option value="eg">Egypt</option>
+          </select>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="phone" name="phone" placeholder="phone number" type="text">
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+    </div>
+    <p class="d">don't have an account? <a href="/signup" style="color:blue">signup</a></p>
+    <button class="btn btn-primary" type="submit">Log In</button>
+</form>
+{% endblock %}

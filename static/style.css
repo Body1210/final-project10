@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+}
+.logo{
+    height:100px;
+    width:100px;
+}
+.nav {
+    overflow: hidden;
+}
+a{
+    text-decoration:none;
+}
+a.logo-link {
+    margin: 0 !important;
+    padding: 0 !important; 
+    transform: translatex(-0px) !important;
+}
+body{
+    background-color: yellow;
+    background-image: url('background.png');
+    background-repeat: repeat;
+    background-position: center;
+    overflow-x: hidden;
+    position:relative;
+    height:100vh;
+    overflow-y: hidden;
+}
+.nav a {
+    float: right;
+    text-transform:capitalize;
+    color: red;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    transform:translatex(200px)
+}
+.d{
+    color:red;
+}
+.card{
+    justify-content:center;
+    align-items:center;
+    transform:translatex(520px);
+    cursor:pointer;
+}
+.card-body{
+    color:black;
+    cursor:pointer;
+}
+.card-img-top{
+    height:100px;
+    width:100px;
+}
+.arrow{
+    height:40px;
+    width:40px;
+
+}
+.main-chat{
+    background:green;
+    height:80vh;
+    width:70%;
+    transform:translatex(200px);
+    position: relative;
+    overflow:hidden;
+}
+.chatright{
+    text-align:end;
+}
+.chatleft{
+    text-align:start;
+}
+.chatleft, .chatright {
+    border: 1px solid rgb(251, 255, 0);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    margin: 5px;
+}
+.infor {
+    text-align: right;
+}
+.infol {
+    text-align: left;
+}
+.infol, .infor{
+    color: rgb(167, 158, 158);
+    font-size: 0.8em;
+}
+.mainmsg{
+    overflow-y: scroll;
+    height: 60vh;
+}
+.user{
+    height:40px;
+    width:40px;
+}
+.menu {
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+  }
+.arrow, .user, .menu{
+    margin-right: 400px;
+}
+.first{
+    display:flex;
+}
+.dot {
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%;
+}
+.msg {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+}
+input[name="msg"] {
+    width: 450% !important;
+}
+.send{
+    width:20%;
+    transform:translatex(670px);
+    cursor:pointer;
+    height:50px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}

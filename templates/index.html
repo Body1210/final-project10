@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block main %}
+<form action="/search" method="post">
+        <div class="mb-3">
+        <input type="text" autocomplete="off" placeholder="search" name="name">
+        <button class="btn btn-primary">search</button>
+    </div>
+</form>
+{% if code == 1 %}
+{% for name in names %}
+<a>
+  <div class="card" style="width: 18rem;" onclick="goToChat('{{ name.name }}')">
+    <img src="/static/user.png" class="card-img-top" alt="User Image">
+    <div class="card-body">
+      <h5 class="card-title">{{ name.name }}</h5>
+      <p class="card-text">{{name.number}}</p>
+    </div>
+  </a>
+  </div>
+{% endfor %}
+{% else %}
+<p>{{msg}}</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block main %}
+<div class="main-chat" >
+    <div class="first">
+        <form action="/">
+            <input type="image" src="/static/arrow.png" class="arrow">
+        </form>
+        <img src="/static/user.png" class="user">
+        <div class="menu">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    <div class="name">
+        <h3 class="username" name="name" id="name">{{name}}</h3>
+    </div>
+    <div class="mainmsg" id="chat">
+    </div>
+        <form id="messageForm">
+            <div class="msg">
+                <div>
+                    <input style="width: 500%;" name="message" id="input" autocomplete="off" class="form-control mx-auto" placeholder="enter your message">
+                </div>
+                <button type="submit" class="send" id="send">Send</button>
+
+        </form>
+    </div>
+</div>
+{% endblock %}
